@@ -1,0 +1,45 @@
+{
+   "name": "@scrypted/eufy-motion",
+   "version": "0.0.18",
+   "description": "Motion Detection for VideoCameras.",
+   "author": "Scrypted",
+   "license": "Apache-2.0",
+   "scripts": {
+      "prepublishOnly": "NODE_ENV=production scrypted-webpack",
+      "prescrypted-vscode-launch": "scrypted-webpack",
+      "scrypted-vscode-launch": "scrypted-deploy-debug",
+      "scrypted-deploy-debug": "scrypted-deploy-debug",
+      "scrypted-debug": "scrypted-debug",
+      "scrypted-deploy": "scrypted-deploy",
+      "scrypted-readme": "scrypted-readme",
+      "scrypted-package-json": "scrypted-package-json",
+      "scrypted-webpack": "scrypted-webpack"
+   },
+   "keywords": [
+      "scrypted",
+      "plugin",
+      "opencv",
+      "motion",
+      "object",
+      "detect",
+      "detection"
+   ],
+   "scrypted": {
+      "name": "Eufy Motion Detection",
+      "singleInstance": false,
+      "type": "API",
+      "interfaces": [
+         "MixinProvider"
+      ],
+      "realfs": true
+   },
+   "dependencies": {
+      "@scrypted/common": "file:../../common",
+      "@scrypted/sdk": "file:../../sdk",
+      "ws": "^8.3.0"
+   },
+   "devDependencies": {
+      "@types/node": "^14.17.11",
+      "@types/ws": "^8.2.1"
+   }
+}
